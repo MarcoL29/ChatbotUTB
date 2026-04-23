@@ -6,8 +6,9 @@ import gradio as gr
 
 
 
-llm = ChatOllama(model="llama3.1", temperature=0)
-
+#llm = ChatOllama(model="llama3.1", temperature=0)
+llm = ChatOllama(model="llama3.1:8b", temperature=0,
+    base_url="http://10.5.32.17:11434" )
 
 def create_chatbot_interface(chatbot):
     def generate_response(user_input):
