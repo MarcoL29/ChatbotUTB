@@ -9,9 +9,9 @@ import os
 load_dotenv()
 
 # --- Option A: Ollama (local) ---
-# llm = ChatOllama(model="llama3.1", temperature=0)
-llm = ChatOllama(model="llama3.1:8b", temperature=0,
-    base_url="http://10.5.32.17:11434")
+llm = ChatOllama(model="llama3.1:8b", temperature=0)
+#llm = ChatOllama(model="llama3.1:8b", temperature=0,
+#    base_url="http://10.5.32.17:11434")
 
 # --- Option B: Groq (cloud) ---
 # Requires: pip install langchain-groq
